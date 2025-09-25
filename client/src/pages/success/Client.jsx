@@ -51,7 +51,7 @@ const Client = () => {
         {/* Logos Grid */}
         <Grid container spacing={4} justifyContent="center" alignItems="center">
           {/* Echo */}
-          <Grid size={{ xs: 6, sm: 4, md: 3 }} item>
+          <Grid size={{ xs: 6, sm: 4, md: 3 }}>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <img
                 src={echo}
@@ -66,7 +66,7 @@ const Client = () => {
           </Grid>
 
           {/* Easypaisa */}
-          <Grid size={{ xs: 6, sm: 4, md: 3 }} item>
+          <Grid size={{ xs: 6, sm: 4, md: 3 }}>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <img
                 src={easypaisa}
@@ -81,7 +81,7 @@ const Client = () => {
           </Grid>
 
           {/* Bird */}
-          <Grid size={{ xs: 6, sm: 4, md: 3 }} item>
+          <Grid size={{ xs: 6, sm: 4, md: 3 }}>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <img
                 src={bird}
@@ -96,7 +96,7 @@ const Client = () => {
           </Grid>
 
           {/* Motive → Circle */}
-          <Grid size={{ xs: 6, sm: 4, md: 3 }} item>
+          <Grid size={{ xs: 6, sm: 4, md: 3 }}>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <img
                 src={motive}

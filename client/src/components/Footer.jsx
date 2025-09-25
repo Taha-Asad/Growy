@@ -32,7 +32,7 @@ const Footer = () => {
           alignItems="flex-start"
         >
           {/* Left Section */}
-          <Grid item size={{ xs: 12, sm: 6, md: 4 }}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Stack direction="column" spacing={2}>
               <Typography
                 fontSize={{ xs: "28px", md: "35px" }}
@@ -54,7 +54,6 @@ const Footer = () => {
 
           {/* Center Section (Equidistant from Left & Right) */}
           <Grid
-            item
             size={{ xs: 12, sm: 6, md: 4 }}
             sx={{ display: "flex", justifyContent: "center" }}
           >
@@ -99,7 +98,6 @@ const Footer = () => {
 
           {/* Right Section */}
           <Grid
-            item
             size={{ xs: 12, sm: 6, md: 4 }}
             sx={{
               display: "flex",

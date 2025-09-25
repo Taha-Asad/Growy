@@ -17,8 +17,7 @@ const RoleItem = ({ title, description, buttonText, image, reverse }) => {
         minHeight: { xs: "auto", md: "500px" }, // ensure proper height on larger screens
       }}
     >
-      {/* Content Section - 50% */}
-      <Grid item xs={12} md={6}>
+      <Grid size={{ xs: 12, md: 6 }}>
         <Stack
           direction="column"
           spacing={4}
@@ -79,7 +78,7 @@ const RoleItem = ({ title, description, buttonText, image, reverse }) => {
       </Grid>
 
       {/* Image Section - 50% */}
-      <Grid item xs={12} md={6}>
+      <Grid size={{ xs: 12, md: 6 }}>
         <Box
           sx={{
             width: "100%",
