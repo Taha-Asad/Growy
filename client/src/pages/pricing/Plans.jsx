@@ -57,6 +57,7 @@ const Plans = () => {
     <Box sx={{ py: { xs: 6, md: 6 } }}>
       <Container>
         <Stack
+          id="hiring-price"
           direction="column"
           alignItems="center"
           spacing={4}
@@ -197,6 +198,7 @@ const Plans = () => {
           </Grid>
         </Stack>
         <Stack
+          id="ecommerce-price"
           direction="column"
           alignItems="center"
           spacing={4}
@@ -337,6 +339,7 @@ const Plans = () => {
           </Grid>
         </Stack>
         <Stack
+          id="business-price"
           direction="column"
           alignItems="center"
           spacing={4}

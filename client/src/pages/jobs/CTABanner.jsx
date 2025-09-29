@@ -1,6 +1,7 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import job from "../../assets/3.png";
+import { Link } from "react-router";
 
 const CTABanner = () => {
   return (
@@ -46,6 +47,7 @@ const CTABanner = () => {
                 Looking for job according to my skills and requirements.
               </Typography>
               <Button
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 sx={{
                   textTransform: "capitalize",
                   color: "white",

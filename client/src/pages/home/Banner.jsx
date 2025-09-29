@@ -1,6 +1,6 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-
+import { Link as RouterLink } from "react-router";
 const Banner = () => {
   return (
     <Box
@@ -34,6 +34,11 @@ const Banner = () => {
           </Typography>
 
           <Button
+            component={RouterLink}
+            to={"/auth"}
+            onClick={() =>
+              window.scrollTo({ top: 0, behavior: "smooth" }, 1000)
+            }
             sx={{
               textTransform: "capitalize",
               color: "white",

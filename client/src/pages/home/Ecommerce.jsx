@@ -1,6 +1,7 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import ecommerce from "../../assets/ecommerce.jpg";
+import { Link } from "react-router";
 
 const Ecommerce = () => {
   return (
@@ -46,6 +47,9 @@ const Ecommerce = () => {
                 efficiency with Growvy!
               </Typography>
               <Button
+                component={Link}
+                to={"/pricing"}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 sx={{
                   textTransform: "capitalize",
                   color: "white",

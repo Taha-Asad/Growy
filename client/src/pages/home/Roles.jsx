@@ -4,6 +4,7 @@ import job from "../../assets/3.png";
 import employer from "../../assets/1.png";
 import eccommerceImage from "../../assets/2.png";
 import business from "../../assets/business.jpg";
+import { Link } from "react-router";
 // RoleItem component
 const RoleItem = ({ title, description, buttonText, image, reverse }) => {
   return (
@@ -51,6 +52,9 @@ const RoleItem = ({ title, description, buttonText, image, reverse }) => {
           </Typography>
 
           <Button
+            component={Link}
+            to={"/jobs"}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             sx={{
               textTransform: "capitalize",
               color: "white",

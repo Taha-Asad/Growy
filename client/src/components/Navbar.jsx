@@ -29,6 +29,7 @@ const Navbar = () => {
     { label: "Success", to: "/success", icon: <EmojiEventsIcon /> },
     { label: "Services", to: "/services", icon: <MiscellaneousServicesIcon /> },
     { label: "Pricing", to: "/pricing", icon: <AttachMoneyIcon /> },
+    { label: "Sign In / Sign Up", to: "/auth", icon: <WorkIcon /> },
   ];
 
   return (

@@ -30,10 +30,7 @@ const JobButtons = ({ onCategorySelect, selectedCategory }) => {
         >
           {categories.map((category, index) => (
             <Grid
-              item
-              xs={6} // 2 per row on mobile
-              sm={4} // 3 per row on tablet+
-              md={4} // still 3 per row on desktop
+              size={{ xs: 6, sm: 4, md: 4 }}
               key={index}
               sx={{
                 display: "flex",

@@ -7,6 +7,7 @@ import ServiceLayOut from "./layout/ServiceLayOut";
 import SuccessLayout from "./layout/SuccessLayout";
 import { Toaster } from "react-hot-toast";
 import PricingLayout from "./layout/PricingLayout";
+import AuthPage from "./components/AuthPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/success" element={<SuccessLayout />} />
         <Route path="/services" element={<ServiceLayOut />} />
         <Route path="/pricing" element={<PricingLayout />} />
+        <Route path="/auth" element={<AuthPage />} />
       </Routes>
       <Footer />
       <Toaster />

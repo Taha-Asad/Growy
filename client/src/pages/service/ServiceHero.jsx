@@ -108,6 +108,14 @@ const ServiceHero = () => {
 
               {/* Button */}
               <Button
+                component={"a"}
+                href="/pricing#hiring-price"
+                onClick={() => {
+                  const section = document.getElementById("hiring-price");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
                 sx={{
                   textTransform: "capitalize",
                   color: "white",
@@ -182,6 +190,14 @@ const ServiceHero = () => {
               </Card>
 
               <Button
+                component={"a"}
+                href="/pricing#ecommerce-price"
+                onClick={() => {
+                  const section = document.getElementById("hiring-price");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
                 sx={{
                   textTransform: "capitalize",
                   color: "white",
@@ -256,6 +272,14 @@ const ServiceHero = () => {
               </Card>
 
               <Button
+                component={"a"}
+                href="/pricing#business-price"
+                onClick={() => {
+                  const section = document.getElementById("hiring-price");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
                 sx={{
                   textTransform: "capitalize",
                   color: "white",

@@ -17,7 +17,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
+import { Link } from "react-router";
 // Icons for navigation
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -201,6 +201,11 @@ const Testimonials = () => {
           </Typography>
 
           <Button
+            component={Link}
+            to={"/auth"}
+            onClick={() =>
+              window.scrollTo({ top: 0, behavior: "smooth" }, 1000)
+            }
             sx={{
               textTransform: "capitalize",
               color: "white",

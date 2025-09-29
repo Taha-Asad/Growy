@@ -4,6 +4,7 @@ import echo from "../../assets/10.png";
 import easypaisa from "../../assets/13.jpg";
 import bird from "../../assets/11.png";
 import motive from "../../assets/12.png";
+import { Link } from "react-router";
 
 const Client = () => {
   return (
@@ -23,6 +24,9 @@ const Client = () => {
             Join over 10k users worldwide
           </Typography>
           <Button
+            component={Link}
+            to={"/pricing"}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             sx={{
               textTransform: "capitalize",
               color: "white",
